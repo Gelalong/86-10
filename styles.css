@@ -52,7 +52,6 @@ header {
   transform-origin: center;
 }
 
-
 .nav-links {
   display: flex;
   list-style: none;
@@ -90,13 +89,19 @@ header {
 .hero-content {
   max-width: 800px;
   padding: 30px;
+  text-align: center; /* 确保内容居中 */
+  margin: 0 auto; /* 确保内容居中 */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 确保子元素居中 */
 }
 
 .hero h1 {
   font-size: 3.5rem;
   margin-bottom: 20px;
   animation: fadeInUp 1s ease;
-  white-space: nowrap; /* Prevents line break */
+  white-space: nowrap; /* 防止换行 */
+  margin: 0 auto; /* 确保标题居中 */
 }
 
 .hero p {
@@ -414,4 +419,21 @@ footer {
   .btn {
     width: 100%;
   }
+}
+
+h1.animate-text {
+  white-space: nowrap;
+  margin: 0 auto;
+}
+
+.centered-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* 确保文本居中 */
+  width: 100%; /* 确保标题占满整个宽度 */
+  position: relative; /* 使其相对定位 */
+  margin: 0 auto; /* 确保标题居中 */
+  transform: translateY(-50%); /* 确保文字中间和页面中间对齐 */
+  top: 50%; /* 垂直居中 */
 }
